@@ -1,0 +1,70 @@
+<html>
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/loadingToast.css">
+    <link rel="stylesheet" href="css/loadingInElement.css">
+    <link rel="stylesheet" href="css/loadingModal.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/777225164c.js"></script>
+
+    <script src="js/loadingToast.js"></script>
+    <script src="js/loadingInElement.js"></script>
+    <script src="js/loadingModal.js"></script>
+
+</head>
+<body>
+
+<div class="col-xs-12">
+
+<ul class="nav nav-tabs">
+ <li ><a href="index.html">Home</a></li>
+  <li><a href="loadingModal.html">Loading Modal</a></li>
+  <li><a class="active" href="inElementLoadingModal.html">Loading Over Element</a></li>
+  <li><a href="loadingToast.html">Loading Toast</a></li>
+</ul>
+
+  <div id="element">
+        <h3>Element Blocking Loading Gif</h3>
+        <div class="col-xs-6">
+            <div id="jumbotron" class="col-xs-offset-1 col-xs-10 jumbotron" style="margin-top:50px">
+                <div>Testing In Element Loading Gif</div>
+                <input type="text" placeholder="Enter Text Here" />
+                <button class="btn btn-primary" onclick="loadingInElement.show('#jumbotron')">  Submit </button> 
+            </div>
+            <div class="col-xs-10 col-xs-offset-1">
+                <button class="btn btn-danger" onclick="loadingInElement.hide('#jumbotron')"> In Element OFF</button>
+            </div>
+        </div>
+
+        <div class="col-xs-6">
+            <div id="jumbotron2" class="col-xs-offset-1 col-xs-10 jumbotron" style="margin-top:50px">
+                <div>Another Element on the screen you would like to interact with while waiting for loading</div>
+                <input type="text" placeholder="Enter Text Here" />
+                <button class="btn btn-primary" onclick="loadingInElement.show('#jumbotron2')">  Submit </button> 
+            </div>
+            <div class="col-xs-10 col-xs-offset-1">
+                <button class="btn btn-danger" onclick="loadingInElement.hide('#jumbotron2')"> In Element OFF</button>
+            </div>
+        </div>
+  </div>
+
+
+</div>
+
+<!-- Loading In Element -->
+
+<div class="loadingInElement" style="display:none">
+    <div class="loadingInElement-backdrop"></div>
+    <div class="loadingContainer">
+        <div class="loadingGif">
+            <i class="fa fa-spinner fa-spin"></i>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+﻿/*
+    Loading Modal
+*/
+
+#loadingModal {
+    font-size: 25px;
+    text-align: center;
+    color: black;
+}
+
+    #loadingModal .loadingContainer div {
+        text-align: center;
+        margin: auto 5px;
+    }
+
+        #loadingModal .loadingContainer div i {
+            text-align: center;
+            margin: auto 5px;
+            font-size: 35px;
+        }
+
+    #loadingModal .modal-dialog .modal-content {
+        color: lightgrey;
+        min-width: 200px;
+        min-height: 100px;
+        background-color: rgba(57, 56, 56, 0.95);
+        border: 2px #100f0f solid;
+        position: absolute;
+        top: 150%;
+        left: 50%;
+        margin-top: 100px;
+        margin-left: -100px;
+    }
+
+    #loadingModal.modal-transparent {
+        font-size: 40px;
+        text-align: center;
+        color: white;
+    }
+
+        #loadingModal.modal-transparent .modal-dialog .modal-content {
+            background-color: transparent;
+            position: absolute;
+            border: none;
+            box-shadow: none;
+        }
+
+    #loadingModal .loadingContainer div i {
+        text-align: center;
+        margin: auto 5px;
+        font-size: 50px;
+    }
+
+.modal-backdrop.in.fade,
+div.modal-backdrop.in,
+.modal-backdrop.fade,
+.modal-backdrop {
+    background-color: black;
+    opacity: .5;
+}
+
+    .modal-backdrop.in.fade.modal-transparent,
+    div.modal-backdrop.in.modal-transparent,
+    .modal-backdrop.fade.modal-transparent,
+    .modal-backdrop.modal-transparent {
+        background-color: black;
+        opacity: .8;
+    }

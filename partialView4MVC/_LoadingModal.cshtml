@@ -1,0 +1,47 @@
+﻿@* ---------------------------------------------------------------------------------
+     Loading Modal - small bootstap modal dialog that is launch when app is waiting for
+                     an ajax return or any kind of server processing.
+                   - add @Html.Partial("_LoadingModal") to the bottom of your layout page
+
+     Additional Classes:
+         modal-transparent - transparent background, large white font.
+                           
+
+     How to Use:
+         onclick  - add class launchLoadingModal to objects to show loading modal when
+                    that element is clicked.
+
+         show     - add loadingModal.show() to your js functions to show loading modal.
+                  - add loadingModal.show() to the beforeSend function of your ajax calls.                     
+
+         hide     - add loadingModal.hide() to your js functions to hide loading modal.
+                  - add loadingModal.hide() to the complete function of your ajax calls.
+
+    Required Files:
+        jquery-{version}.js - the javaScript for this modal dialog uses jQuery
+
+        loadingModal.js     - javaScript file for this view. handles initializing modal,
+                              adding onclick method, showing, and hiding.
+
+        loadingModal.css    - style sheet for modal.
+
+        bootstrap           - this is a bootstrap modal. It uses  bootstrap css and javaScript
+    -------------------------------------------------------------------------------*@
+
+<div class="modal fade modal-transparent" id="loadingModal" tabindex="-1" role="dialog" aria-labelledby="loadingModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="loadingContainer">
+                    <div>Loading</div>
+                    <div><i class="fa fa-spinner fa-spin"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

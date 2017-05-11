@@ -1,0 +1,71 @@
+<html>
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/loadingToast.css">
+    <link rel="stylesheet" href="css/loadingInElement.css">
+    <link rel="stylesheet" href="css/loadingModal.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/777225164c.js"></script>
+
+    <script src="js/loadingToast.js"></script>
+    <script src="js/loadingInElement.js"></script>
+    <script src="js/loadingModal.js"></script>
+
+</head>
+<body>
+
+<div class="col-xs-12"> 
+
+<ul class="nav nav-tabs">
+  <li><a href="index.html">Home</a></li>
+  <li class="active"><a href="loadingModal.html">Loading Modal</a></li>
+  <li><a href="inElementLoadingModal.html">Loading Over Element</a></li>
+  <li><a href="loadingToast.html">Loading Toast</a></li>
+</ul>
+
+<div class="col-xs-12">
+    <h3>Modal Style Loading Gif</h3>
+        <div class="col-xs-12">
+            <div> for testing timeouts in 3 sec </div>
+            <div class="col-xs-12">
+                <button class="btn" onclick="loadingModal.show('default')">  Modal Default </button>
+            </div>
+            <div class="col-xs-12">
+                <button class="btn" onclick="loadingModal.show('modal-transparent')">  Modal Transparent </button>
+            </div>      
+        </div>
+</div>
+
+</div>
+
+
+<!-- Loading Modal -->
+<div class="modal fade modal-transparent" id="loadingModal" tabindex="-1" role="dialog" aria-labelledby="loadingModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="loadingContainer">
+                    <div>Loading</div>
+                    <div><i class="fa fa-spinner fa-spin"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+
+<script>
+$('#loadingModal').on('shown.bs.modal', function () {
+  setTimeout(function(){
+        loadingModal.hide();
+
+  }, 3000)
+})
+</script>

@@ -1,0 +1,60 @@
+<html>
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/loadingToast.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/777225164c.js"></script>
+
+    <script src="js/loadingToast.js"></script>
+</head>
+
+
+<body>
+
+<ul class="nav nav-tabs">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="loadingModal.html">Loading Modal</a></li>
+  <li><a href="inElementLoadingModal.html">Loading Over Element</a></li>
+  <li class="active"><a href="loadingToast.html">Loading Toast</a></li>
+</ul>
+
+    <div class="row">
+        
+        <div class="col-xs-offset-3 col-xs-6">
+            <div class="row">
+                <ul>
+                    <li><button class="btn btn-primary" onclick="toast.show('primary')">Toast</button></li>
+                    <li><button class="btn btn-success" onclick="toast.show('success')">Toast</button></li>
+                    <li><button class="btn btn-danger" onclick="toast.show('danger')">Toast</button></li>
+                    <li><button class="btn btn-warning" onclick="toast.show('warning')">Toast</button></li>
+                    <li><button class="btn" onclick="toast.show('default')">Toast Default</button></li>
+                    <li><button class="btn" onclick="toast.show()">Toast (last class)</button></li> 
+                </ul>
+            </div>
+
+            <div class="row" style="margin-top:50px">
+                <div class="col-xs-6">
+                   <button class="btn btn-danger" onclick="toast.hide()">  Toast OFF</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+<!-- Loading Toast -->
+
+<div class="toast" id="loadingToast" style="display:none">
+    <div class="loadingContainer">
+        <i class="fa fa-spinner fa-spin"></i>Loading
+    </div>
+</div>
+
+
+    </body>
+</html>

@@ -1,0 +1,35 @@
+﻿@* ---------------------------------------------------------------------------------
+     Loading Toast - small div that is launch when app is waiting for
+                     an ajax return or any kind of server processing.
+                   - add @Html.Partial("_LoadingToast") to the bottom of your layout page(s)
+
+     Additional Classes:
+         primary - blue background
+         success - green background
+         warning - yellow/orange background
+         danger  - red background
+
+     How to Use:
+         onclick  - add class launchToast to objects to show loading toast when
+                    that element is clicked.
+         show     - add toast.show() to your js functions to show loading modal.
+                  - add toast.show() to the beforeSend function of your ajax calls.
+         hide     - add toast.hide() to your js functions to hide loading modal.
+                  - add toast.hide() to the complete function of your ajax calls.
+
+    Required Files:
+        jquery-{version}.js - the javaScript for this toast uses jQuery
+
+        loadingToast.js     - javaScript file for this view. handles
+                              adding onclick method, showing div, and hiding div.
+
+        loadingToast.css    - style sheet for modal.
+    -------------------------------------------------------------------------------*@
+
+<div class="toast success" id="loadingToast" style="display:none">
+    <div class="loadingContainer">
+        <i class="fa fa-spinner fa-spin"></i>Loading
+    </div>
+</div>
+
+
