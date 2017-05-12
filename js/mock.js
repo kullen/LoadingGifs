@@ -111,11 +111,15 @@ mockToast = (function ($) {
 
     function findAndShift(elementIdStartingWith) {
 
+        
+
         $('div[id^=' + elementIdStartingWith + ']')
             .each(function () {
                 var topVal = $(this).css('top');
 
                 topVal = topVal.replace(/[^-\d\.]/g, '') * 1;
+
+                
 
                 if (baseTopOffset == null) {
                     baseTopOffset = topVal; // offset of the very top toast
