@@ -8,6 +8,7 @@
     height: 100%;
 }
 
+.loadingInElement .loadingContainer .loadingGif span,
 .loadingInElement .loadingContainer .loadingGif i {
     margin-right: 10px;
     margin-left: 10px;

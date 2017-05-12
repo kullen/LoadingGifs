@@ -38,7 +38,8 @@
     /*text-align: center;*/
 }
 
-.toast .loadingContainer i {
+.toast .loadingContainer i,
+.toast .loadingContainer span {
     margin-right: 20px;
     margin-left: 15px;
 }
