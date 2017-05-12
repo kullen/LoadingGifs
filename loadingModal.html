@@ -2,6 +2,7 @@
 <head>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mockStyles.css">
     <link rel="stylesheet" href="css/commonStyle.css">
     <link rel="stylesheet" href="css/loadingModal.css">
 
@@ -9,6 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!--<script src="https://use.fontawesome.com/FONTAWESOME-EmbedCode.js"></script>-->
     <script src="js/loadingModal.js"></script>
+    <script src="js/mock.js"></script>
 
 </head>
 <body>
@@ -35,6 +37,103 @@
         </div>
 </div>
 
+<section>
+            <h3> Example Use </h3>
+            <p>  In the below demo page. You can submit multiple contact forms or navigate to the other tabs and still be able to view your loading progress</p>
+            <div id="mockPageContainer" class="row">
+                <div class="row">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#menu1" data-toggle="tab">Home</a></li>
+                        <li><a href="#menu2" data-toggle="tab">About </a></li>
+                        <li><a href="#menu3" data-toggle="tab">Contact</a></li>
+                     </ul>
+                </div>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="menu1">
+                        <div class="mockBody">
+                                <div id="homeImage" class="hero-image">
+                                    <div class="hero-text">
+                                        <h1>I am John Doe</h1>
+                                        <p>And I'm a Photographer</p>
+                                        <button class="btn btn-primary" id="modalfacebookLike">
+                                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                                            Like
+                                        </button>
+                                    </div>
+                                </div>
+                                <h3> Testimonials </h3>
+                                <div class="testimonial">
+                                    <img src="..\LoadingGifs\images\bandmember.jpg" alt="Avatar" style="width:90px">
+                                    <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+                                    <p>John Doe saved us from a web disaster.</p>
+                                </div>
+
+                                <div class="testimonial">
+                                    <img src="..\LoadingGifs\images\avatar_g2.jpg" alt="Avatar" style="width:90px">
+                                    <p><span >Rebecca Flex.</span> CEO at Company.</p>
+                                    <p>No one is better than John Doe.</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="menu2">
+                            <div id="aboutMe" class="hero-image">
+                                    <div class="hero-text">
+                                        <h1>About Me</h1>
+                                    </div>
+                                </div>
+                                <div> 
+                                    Lorem ipsum dolor sit amet, imperdiet reprehenderit erat elit non, ullamcorper hendrerit donec cursus. 
+                                    Velit ut eu. Proin sociis nulla, turpis augue, ac at lobortis sed. Lacus scelerisque viverra sed ut. 
+                                    Nam vitae ultricies donec neque facilisis ligula, elit a adipiscing odio et, mollis elit libero consequat 
+                                    donec. In dolor, tempus in pulvinar quis dolor eleifend. Aliquet aenean parturient elit maecenas, dictumst 
+                                    in, non sed sit nec pellentesque ut. Curabitur accumsan, in quis sed accumsan feugiat do vel, mattis accumsan 
+                                    ante ut risus, tortor viverra ac malesuada blandit. Congue in vehicula morbi sociis, nascetur auctor lorem 
+                                    egestas lobortis, etiam libero ultrices non. Rhoncus soluta sed semper aliquam pede erat, condimentum luctus 
+                                    tempor mattis, mauris convallis volutpat, erat commodo et. Viverra ultrices tristique magna, dui eget aliquam 
+                                    molestie at lacus, morbi vestibulum, consectetur eros. 
+                                    <br />
+                                    <br />
+                                    Nisl fermentum pede aenean erat egestas amet, 
+                                    tellus sem eleifend, sapien sit urna, dui vitae, rutrum elementum magna sed morbi duis dignissim. 
+                                    Suspendisse vestibulum curabitur quisque mauris. Suspendisse leo euismod, leo at condimentum orci ante, eu sed 
+                                    ultricies diam nisl magnis, ultricies massa velit rhoncus justo pede. Duis lorem ligula, orci duis sed, ut sed 
+                                    culpa urna eu volutpat et, urna vestibulum tellus sapien neque lorem, felis suspendisse. Vel pellentesque neque 
+                                    cras adipiscing eget a, et sem nibh. Nunc ridiculus consectetuer neque ante, feugiat ante praesentium etiam massa, 
+                                    quis ut tincidunt sed in. Neque taciti lorem sit mollis posuere velit, sit sed quis ut luctus quam, nostrud mauris,
+                                    sit ad integer hendrerit praesent. Sollicitudin fusce ac sodales morbi iure lectus, nunc dui eu vivamus, augue 
+                                    aliquam nulla amet mauris, etiam integer urna eget tellus mus nunc.
+                                </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="menu3">
+                            <h1> Contact  </h1>
+                            <div class="container">
+                                <form action="/action_page.php">
+
+                                    <label for="fname">First Name</label>
+                                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                                    <label for="lname">Last Name</label>
+                                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                                    <label for="country">Country</label>
+                                    <select id="country" name="country">
+                                    <option value="australia">Australia</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="usa">USA</option>
+                                    </select>
+
+                                    <label for="subject">Subject</label>
+                                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                                    <input type="button" id="modalContactSubmitBtn" value="Submit">
+
+                                </form>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 </div>
 
 
@@ -53,6 +152,15 @@
     </div>
 </div>
 
+<!-- In Element Loading Modal for Testing -->
+<div class="loadingInElement" style="display:none">
+    <div class="loadingInElement-backdrop"></div>
+    <div class="loadingContainer">
+        <div class="loadingGif">
+            <span class="glyphicon glyphicon-refresh glyphicon-spin" aria-hidden="true"></span>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>

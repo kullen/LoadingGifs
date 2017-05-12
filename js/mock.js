@@ -10,10 +10,13 @@ $(document).ready(function () {
     });
 
 
-    $("#facebookLike").on("click", function () {
+    $("#toastfacebookLike").on("click", function () {
         likeOnFacebook($(this))
     });
 
+    $("#modalfacebookLike").on("click", function () {
+        mockLoadingInElement.show('#mockPageContainer');
+    });
 
 });
 
@@ -111,8 +114,6 @@ mockToast = (function ($) {
 
     function findAndShift(elementIdStartingWith) {
 
-        
-
         $('div[id^=' + elementIdStartingWith + ']')
             .each(function () {
                 var topVal = $(this).css('top');
@@ -130,6 +131,46 @@ mockToast = (function ($) {
     }
     return mockToast;
 }(jQuery));
+
+
+mockLoadingInElement = (function ($) {
+    mockLoadingInElement = {};
+
+    //Adds loading gif to container element
+    mockLoadingInElement.show = function (elementId) {
+        var newId = 'loadingInElement-';
+
+        if (elementId.charAt(0) != "#") {
+            newId += elementId
+            elementId = "#" + elementId;
+        }
+        else {
+            newId += elementId.substring(1);
+        }
+
+        $(".loadingInElement").clone().prop('id', newId).appendTo(elementId);
+        $('#' + newId).show();
+    };
+
+    //Removes loading gif from container element
+    //Shouldn't need hide function if ajax replaces html, but just in case
+    mockLoadingInElement.hide = function (elementId) {
+        
+        var newId = '#loadingInElement-';
+
+        if (elementId.charAt(0) != "#") {
+            newId += elementId
+        }
+        else {
+            newId += elementId.substring(1);
+        }
+        $(newId).remove();
+
+    };
+
+    return mockLoadingInElement;
+}(jQuery));
+
 
 
 // https://www.w3schools.com/howto/howto_js_snackbar.asp

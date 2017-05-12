@@ -27,6 +27,51 @@ font-size: larger;
     background-color: rgba(48, 174, 18, 0.65);
 }
 
+/* **************************************************************
+ Using InElement Loading Modal to Act as normal Loading Modal
+*/
+.loadingInElement-backdrop{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    z-index: 800;
+    background-color: rgba(247, 238, 238, 0.67);
+    width: 100%;
+    height: 100%;
+}
+
+.loadingInElement .loadingContainer .loadingGif span,
+.loadingInElement .loadingContainer .loadingGif i {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size:40px;
+}
+
+.loadingInElement .loadingContainer{
+    position: absolute;
+    top:40%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+    z-index: 900;
+    color:white;
+    background-color: rgba(16, 15, 15, 0.50);
+    border-radius: 5px;
+}
+
+.loadingInElement .loadingContainer .loadingGif{
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top:50%;
+    margin-top: -25px;
+    width: 100%;
+    height:100px;
+}
+
+
 /* The hero image - https://www.w3schools.com/howto/howto_css_hero_image.asp */
 .hero-image {
     /* The image used */
