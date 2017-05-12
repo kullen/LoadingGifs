@@ -2,6 +2,7 @@
 <head>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mockStyles.css">
     <link rel="stylesheet" href="css/commonStyle.css">
     <link rel="stylesheet" href="css/loadingToast.css">
 
@@ -10,6 +11,7 @@
     <!--<script src="https://use.fontawesome.com/FONTAWESOME-EmbedCode.js"></script>-->
 
     <script src="js/loadingToast.js"></script>
+    <script src="js/mock.js"></script>
 </head>
 
 
@@ -22,41 +24,153 @@
   <li class="active"><a href="loadingToast.html">Loading Toast</a></li>
 </ul>
 
-    <div class="row">
-        
-        <div class="col-xs-offset-3 col-xs-6">
-            <div class="row">
-                <ul>
-                    <li><button class="btn btn-primary" onclick="toast.show('primary')">Toast</button></li>
-                    <li><button class="btn btn-success" onclick="toast.show('success')">Toast</button></li>
-                    <li><button class="btn btn-danger" onclick="toast.show('danger')">Toast</button></li>
-                    <li><button class="btn btn-warning" onclick="toast.show('warning')">Toast</button></li>
-                    <li><button class="btn" onclick="toast.show('default')">Toast Default</button></li>
-                    <li><button class="btn" onclick="toast.show()">Toast (last class)</button></li> 
-                </ul>
-            </div>
-
-            <div class="row" style="margin-top:50px">
-                <div class="col-xs-6">
-                   <button class="btn btn-danger" onclick="toast.hide()">  Toast OFF</button>
-                </div>
-            </div>
+    <div class="col-xs-12">
+        <h3>Toast Style Loading Gif</h3>
+        <section>
+        <h3>Examples</h3>
+        <div class="col-xs-6">
+                    
+                    <button class="btn btn-primary" onclick="toast.show('primary')">Toast</button>
+                    <button class="btn btn-success" onclick="toast.show('success')">Toast</button>
+                    <button class="btn btn-danger" onclick="toast.show('danger')">Toast</button>
+                    <button class="btn btn-warning" onclick="toast.show('warning')">Toast</button>
+                    <button class="btn" onclick="toast.show('default')">Toast Default</button>
+                    <button class="btn" onclick="toast.show()">Toast (last class)</button> 
+            
         </div>
+        <div class="class-xs-6">          
+                   <button class="btn btn-danger" onclick="toast.hide()">  Toast OFF</button>  
+        </section>
 
+        <section>
+            <h3> Title Text </h3>
+            <div>
+                The Toast Loading Gif allows you to have a loading indicator and full access to your webpage.
+                You are not blocked from interacting with the rest of your page while you are waiting for a response from the server.
+            </div>
+        </section>
+
+        <section>
+            <h3> Example Use </h3>
+            <p>  In the below demo page. You can submit multiple contact forms or navigate to the other tabs and still be able to view your loading progress</p>
+            <div id="mockPageContainer" class="row">
+                <div class="row">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#menu1" data-toggle="tab">Home</a></li>
+                        <li><a href="#menu2" data-toggle="tab">About </a></li>
+                        <li><a href="#menu3" data-toggle="tab">Contact</a></li>
+                     </ul>
+                </div>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="menu1">
+                        <div class="mockBody">
+                                <div id="homeImage" class="hero-image">
+                                    <div class="hero-text">
+                                        <h1>I am John Doe</h1>
+                                        <p>And I'm a Photographer</p>
+                                        <button class="btn btn-primary" id="facebookLike">
+                                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                                            Like
+                                        </button>
+                                    </div>
+                                </div>
+                                <h3> Testimonials </h3>
+                                <div class="testimonial">
+                                    <img src="..\LoadingGifs\images\bandmember.jpg" alt="Avatar" style="width:90px">
+                                    <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+                                    <p>John Doe saved us from a web disaster.</p>
+                                </div>
+
+                                <div class="testimonial">
+                                    <img src="..\LoadingGifs\images\avatar_g2.jpg" alt="Avatar" style="width:90px">
+                                    <p><span >Rebecca Flex.</span> CEO at Company.</p>
+                                    <p>No one is better than John Doe.</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="menu2">
+                            <div id="aboutMe" class="hero-image">
+                                    <div class="hero-text">
+                                        <h1>About Me</h1>
+                                    </div>
+                                </div>
+                                <div> 
+                                    Lorem ipsum dolor sit amet, imperdiet reprehenderit erat elit non, ullamcorper hendrerit donec cursus. 
+                                    Velit ut eu. Proin sociis nulla, turpis augue, ac at lobortis sed. Lacus scelerisque viverra sed ut. 
+                                    Nam vitae ultricies donec neque facilisis ligula, elit a adipiscing odio et, mollis elit libero consequat 
+                                    donec. In dolor, tempus in pulvinar quis dolor eleifend. Aliquet aenean parturient elit maecenas, dictumst 
+                                    in, non sed sit nec pellentesque ut. Curabitur accumsan, in quis sed accumsan feugiat do vel, mattis accumsan 
+                                    ante ut risus, tortor viverra ac malesuada blandit. Congue in vehicula morbi sociis, nascetur auctor lorem 
+                                    egestas lobortis, etiam libero ultrices non. Rhoncus soluta sed semper aliquam pede erat, condimentum luctus 
+                                    tempor mattis, mauris convallis volutpat, erat commodo et. Viverra ultrices tristique magna, dui eget aliquam 
+                                    molestie at lacus, morbi vestibulum, consectetur eros. 
+                                    <br />
+                                    <br />
+                                    Nisl fermentum pede aenean erat egestas amet, 
+                                    tellus sem eleifend, sapien sit urna, dui vitae, rutrum elementum magna sed morbi duis dignissim. 
+                                    Suspendisse vestibulum curabitur quisque mauris. Suspendisse leo euismod, leo at condimentum orci ante, eu sed 
+                                    ultricies diam nisl magnis, ultricies massa velit rhoncus justo pede. Duis lorem ligula, orci duis sed, ut sed 
+                                    culpa urna eu volutpat et, urna vestibulum tellus sapien neque lorem, felis suspendisse. Vel pellentesque neque 
+                                    cras adipiscing eget a, et sem nibh. Nunc ridiculus consectetuer neque ante, feugiat ante praesentium etiam massa, 
+                                    quis ut tincidunt sed in. Neque taciti lorem sit mollis posuere velit, sit sed quis ut luctus quam, nostrud mauris,
+                                    sit ad integer hendrerit praesent. Sollicitudin fusce ac sodales morbi iure lectus, nunc dui eu vivamus, augue 
+                                    aliquam nulla amet mauris, etiam integer urna eget tellus mus nunc.
+                                </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="menu3">
+                            <h1> Contact  </h1>
+                            <div class="container">
+                                <form action="/action_page.php">
+
+                                    <label for="fname">First Name</label>
+                                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                                    <label for="lname">Last Name</label>
+                                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                                    <label for="country">Country</label>
+                                    <select id="country" name="country">
+                                    <option value="australia">Australia</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="usa">USA</option>
+                                    </select>
+
+                                    <label for="subject">Subject</label>
+                                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                                    <input type="button" id="toastContactSubmitBtn" value="Submit">
+
+                                </form>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="toast" id="mockLoadingToast" style="display:none">
+                    <div class="loadingContainer">
+                        <!--<i class="fa fa-spinner fa-spin"></i>-->
+                        <span class="glyphicon glyphicon-refresh glyphicon-spin" aria-hidden="true"></span>
+                        Loading
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </div>
 
 
+    <!-- Loading Toast -->
 
-<!-- Loading Toast -->
-
-<div class="toast" id="loadingToast" style="display:none">
-    <div class="loadingContainer">
-        <!--<i class="fa fa-spinner fa-spin"></i>-->
-        <span class="glyphicon glyphicon-refresh glyphicon-spin" aria-hidden="true"></span>
-        Loading
+    <div class="toast" id="loadingToast" style="display:none">
+        <div class="loadingContainer">
+            <!--<i class="fa fa-spinner fa-spin"></i>-->
+            <span class="glyphicon glyphicon-refresh glyphicon-spin" aria-hidden="true"></span>
+            Loading
+        </div>
     </div>
-</div>
 
+    <!-- The actual snackbar -->
+    <div id="snackbar"></div>
+    
 
     </body>
 </html>
